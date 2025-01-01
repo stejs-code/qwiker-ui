@@ -1,5 +1,5 @@
 {
-  "name": "my-qwik-library-name",
+  "name": "qwiker",
   "version": "0.0.1",
   "description": "Create a Qwik library",
   "main": "./lib/index.qwik.mjs",
@@ -21,6 +21,7 @@
   },
   "private": false,
   "type": "module",
+  "repository": "https://github.com/stejs-code/qwiker-ui",
   "scripts": {
     "build": "qwik build",
     "build.lib": "vite build --mode lib",
@@ -35,20 +36,29 @@
     "test": "echo \"No test specified\" && exit 0",
     "qwik": "qwik"
   },
+  "dependencies": {
+    "focus-trap": "^7.6.2"
+  },
   "devDependencies": {
-    "@builder.io/qwik": "1.11.0",
     "@types/eslint": "8.56.10",
     "@types/node": "20.14.11",
     "@typescript-eslint/eslint-plugin": "7.16.1",
     "@typescript-eslint/parser": "7.16.1",
     "eslint": "8.57.0",
     "eslint-plugin-qwik": "1.11.0",
-    "focus-trap": "^7.6.2",
     "np": "^8.0.4",
     "prettier": "3.3.3",
     "typescript": "5.4.5",
     "undici": "*",
     "vite": "5.3.5",
     "vite-tsconfig-paths": "^4.2.1"
-  }
+  },
+  "peerDependencies": {
+    "@builder.io/qwik": "=>1.5.0"
+  },
+  "keywords": [
+    "ui"
+  ],
+  "author": "Tom Stejskal",
+  "license": "ISC"
 }
